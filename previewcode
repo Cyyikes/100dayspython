@@ -1,0 +1,82 @@
+########## 1 
+###1-  Python Print Function
+print("Day 1 - Python Print Function")
+print("The function is declared like this:")
+print("print('what to print')")
+
+### 2 - string manipulation
+
+print("Day 1 - String Manipulation")
+print('String Concatenation is done with the "+" sign.')
+print('e.g. print("Hello " + "world")')
+print("New lines can be created with a backslash and n.")
+
+#settings --> code intelligence to see where the error is
+# debug comes from mug stuck in the computer made the code bug
+
+### 3 - input function 
+ 
+print(len(("What is your name? ")))
+
+#input --> does not stop like print
+#what if we want to enter some data, instead of printing it --> input function 
+input("A prompt for the use") 
+#now you can actually give data, then the code gives it
+input("What is your name?")
+#in print the prompt
+print("Hello " + input("What is your name?"))
+#input is nested inside the print code
+
+# 3.2 input function exercise
+#program to print the number of character in the name of someone
+input("What is your name? ")
+# search for answers on stack overflow
+#len("") print the number, length print(len("Angela"))
+print(len(input("What is your name? ")))
+
+# 4 variables
+input("What is your name? ")
+#if we give a name to this function, we can refer to it later
+name = input("What is your name?")
+print(name)
+# now we can get back to this, refer to this information
+name = "Jack"
+print(name)
+name = "Angela"
+#but if we want to change that data later on
+#now it is holding on to the value of Angela
+#can now put name 
+name = input("What is your name?")
+length = len(name)
+print(length)
+
+# exercise --> Write a program that switches the values stored in the variables a and b.
+a = input("a: ")
+b = input("b: ")
+
+c = a
+a = b
+b = c
+
+print("a: " + a)
+print("b: " + b)
+
+#5 naming variable
+#can call whatever as long as consistent 
+#can't have a space in between 
+user_name = input("What is your name")
+#if wanna use number
+length2 = len(n)
+#can't be at the begining
+#don't use other functions as names 
+
+#1. Create a greeting for your program.
+print("WELCOME TO DMB")
+#2. Ask the user for the city that they grew up in.
+city = input("which city did you grow up in?\n")
+#3. Ask the user for the name of a pet.
+pet = input("What is the name of a pet?\n")
+#4. Combine the name of their city and pet and show them their band name.
+print("Your dancer name could be " + city + " " + pet)
+#5. Make sure the input cursor shows on a new line, see the example at:
+#   https://replit.com/@appbrewery/band-name-generator-end
